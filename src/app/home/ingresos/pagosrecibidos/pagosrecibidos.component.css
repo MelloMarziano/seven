@@ -1,0 +1,25 @@
+.arribita{
+  color: #ddd;
+  height: 15vh;
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.tablas{
+
+  background: #DDD;
+  color: #000;
+  font-size: 2rem;
+}
+
+.iconitosA{
+  color: red;
+}
+.iconitosB{
+  color: brown;
+}
+
+

@@ -16,13 +16,22 @@ import { NoLoginGuard } from './no-login.guard';
 import { IngresosComponent } from './home/ingresos/ingresos.component';
 import { FacturaventasComponent } from './home/ingresos/facturaventas/facturaventas.component';
 import { PrincipalComponent } from './home/principal/principal.component';
+import { PagosrecibidosComponent } from './home/ingresos/pagosrecibidos/pagosrecibidos.component';
+import { CotizacionesComponent } from './home/ingresos/cotizaciones/cotizaciones.component';
+import { GastosComponent } from './home/gastos/gastos.component';
+import { PagosComponent } from './home/gastos/pagos/pagos.component';
+import { FacturaproveedoresComponent } from './home/gastos/facturaproveedores/facturaproveedores.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent, canActivate: [NoLoginGuard] },
   { path: 'home', component: HomeComponent, canActivate: [LoginGuard],children:[
     { path: 'ingresos', component: IngresosComponent},
     { path: 'principal', component: PrincipalComponent, pathMatch: 'full'},
-    { path: 'facturaV', component: FacturaventasComponent}
+    { path: 'facturaV', component: FacturaventasComponent},
+    { path: 'pagosR', component: PagosrecibidosComponent},
+    { path: 'cotiza', component: CotizacionesComponent},
+    { path: 'facturaP', component: FacturaproveedoresComponent},
+    { path: 'pagos', component: PagosComponent}
   ] },
 
 
@@ -35,7 +44,12 @@ const appRoutes: Routes = [
     LoginComponent,
     IngresosComponent,
     FacturaventasComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    PagosrecibidosComponent,
+    CotizacionesComponent,
+    GastosComponent,
+    PagosComponent,
+    FacturaproveedoresComponent
   ],
   imports: [
     FormsModule,
