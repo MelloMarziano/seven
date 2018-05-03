@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  comprobar(){
+  login(){
     if(this.usuario=="eliu.orteg@gmail.com" && this.cl=="1234"){
       localStorage.setItem('email',this.usuario)
       this.router.navigate( ['home']);

@@ -1,178 +1,103 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="hidden-xs col-sm-2 ladoB">
-      <div class="row barrita1">
-        <div class="col-xs-12 logoI">
-          <img src="./assets/img/logo.png"  class="imgLogo">
-        </div>
-      </div>
-      <div class="row ">
-        <div class="medioBarrita2">
+<div class="cajon">
+  <div class="menu">
 
-          <div class="panel-group panelitos" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel cambioC">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="true" >
-                          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> &nbsp; &nbsp;
-                        HOME
-                      </a>
-                    </h4>
-                  </div>
-                </div>
-            <div class="panel cambioC ">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      <span class="glyphicon glyphicon-import" aria-hidden="true"></span> &nbsp; &nbsp;
-                    INGRESOS
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <ul class="noMostrar">
-                    <li routerLink="facturaV">FACTURA DE VENTA</li>
-                    <li routerLink="pagosR">PAGOS RECIBIDOS</li>
-                    <li routerLink="cotiza">COTIZACIONES</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="panel cambioC">
-              <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <span class="glyphicon glyphicon-export" aria-hidden="true"></span> &nbsp; &nbsp;
-                    GASTOS
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                  <ul class="noMostrar">
-                    <li routerLink="pagos">PAGOS</li>
-                    <li routerLink="facturaP">FACTURA DE PROOVEDORES</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="panel cambioC">
-              <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp; &nbsp;
-                    CONTACTOS
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                  <ul class="noMostrar">
-                    <li>TODOS</li>
-                    <li>CLIENTES</li>
-                    <li>PROVEEDORES</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        INGRESOS &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
+    </div>
 
-            <div class="panel cambioC">
-                <div class="panel-heading" role="tab" id="headingFor">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
-                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span> &nbsp; &nbsp;
-                      LISTA DE PRODUCTOS
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
-                  <div class="panel-body">
-                    <ul class="noMostrar">
-                      <li>ITEMS DE VENTA</li>
-                      <li>VALOR DE INVENTARIO</li>
-                      <li>AJUSTES A INVENTARIO</li>
-                      <li>GESTION DE ITEMS</li>
-                      <li>LISTAS DE PRECIOS</li>
-                      <li>ALMACENES</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        GASTOS &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
+    </div>
 
-              <div class="panel cambioC">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="true" >
-                          <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span> &nbsp; &nbsp;
-                        BANCO
-                      </a>
-                    </h4>
-                  </div>
-                </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        CONTACTOS &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
+    </div>
 
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        INVENTARIO &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
+    </div>
 
-          </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        BANCOS &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
+    </div>
 
-
-
-        </div>
-      </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        INGRESOS &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
     </div>
 
 
-    <div class="col-xs-12 col-sm-10 ladoC">
 
-      <!--Comienzo barra menu-->
-      <div class="row">
-        <div class="col-xs-12 barrita">
-          <div class="row ver">
-
-
-            <div class="col-xs-12 medioBarrita">
-
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-link botDRO">
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    </button>
-
-
-                    <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-link dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{name}} &nbsp; &nbsp;
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Perfil</a></li>
-                        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--fin de barra de menu-->
-
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="contenedorHome">
-              <router-outlet ></router-outlet>
-          </div>
-
-        </div>
-      </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{name}} &nbsp; &nbsp;
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+      </ul>
     </div>
   </div>
+
 </div>
 
 
 
 
+<!--
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-link dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{name}} &nbsp; &nbsp;
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Perfil</a></li>
+    <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+  </ul>
+</div>
 
 
 
-
-
+-->
