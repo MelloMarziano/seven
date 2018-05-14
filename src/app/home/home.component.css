@@ -14,7 +14,7 @@
   height: 5%;
   width: 100%;
   background: #285887;
-
+  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -22,4 +22,41 @@
 
   color:#000;
 
+}
+
+.cajaVistas{
+  height: 95%;
+  width: 100vw;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  color:#000;
+}
+
+
+
+
+.lateral{
+  height: 100%;
+  width: 20%;
+  background: #285887;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.centro{
+  height: 100%;
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }

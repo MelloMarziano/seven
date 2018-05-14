@@ -7,8 +7,9 @@
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#" (click)="logout()">Cerrar Sesion</a></li>
+        <li><a routerLink="facturaV">Factura de venta</a></li>
+        <li><a href="#">Pagos Recibidos</a></li>
+        <li><a href="#">Cotizaciones</a></li>
       </ul>
     </div>
 
@@ -46,7 +47,7 @@
     </div>
 
     <div class="btn-group" role="group">
-      <button type="button" class="btn btn-default dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button type="button" class="btn btn-primary dropdown-toggle botDRO" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         BANCOS &nbsp; &nbsp;
         <span class="caret"></span>
       </button>
@@ -80,6 +81,14 @@
       </ul>
     </div>
   </div>
+  <div class="cajaVistas">
+    <div class="lateral"></div>
+    <div class="centro">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
 
 </div>
 
